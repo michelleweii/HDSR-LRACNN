@@ -9,3 +9,4 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 
 
 # Accept Notication
+<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/accept.jpg" width="900" alt="录用通知">
