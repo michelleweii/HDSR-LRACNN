@@ -53,4 +53,4 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 
 # Accept Notication
 
-<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/i3d.png" width="600" alt="accept">
+<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/i3d.png" width="700" alt="accept">
