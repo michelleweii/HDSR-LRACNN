@@ -49,7 +49,7 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 
 好累哦 先完成公司的代码 明天再写剩余部分8️⃣！
 
-<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/NMS.png" width="400" alt="structure">
+<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/NMS.png" width="450" alt="structure">
 
 # Accept Notication
 
