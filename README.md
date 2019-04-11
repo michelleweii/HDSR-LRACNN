@@ -10,7 +10,7 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 
 ## Modified CNN
 
-<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/structure.png" width="700" alt="structure">
+<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/structure.png" width="719" alt="structure">
 
 # Datasets
 
@@ -40,6 +40,14 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 
 
 # NMS
+
+实验过程中，分析了bad cases，主要原因在于字符级别的检测和传统目标检测不一样，传统目标检测中物体会分的比较开，但是字符都是挨在一起的。NMS是对同类别物体做抑制的，先选中一个物体，比如是“猫”。(>^ω^<)喵，对所有类别为“猫”的bbox按照score降序排列，选中最大的bbox，用剩余的bbox和它做对比，IOU==0.5作为阈值，大于0.5的说明两个bbox重合度较高，那么删除掉第二个bbox，依次类推，对“猫”进行bbox的nms后，再对“狗”的bbox进行nms。
+
+所以上述流程存在一个问题，在字符级别的检测中，假如对“1”进行检测产生了很多候选的bbox，那么nms的时候两个框尽管离得很近但是iou的阈值并没有达到，所以会残留很多的bbox，如果“1”后面接的是“0”，“0”的候选框比较偏正方形，那么是很有可能和前面“1”产生冗余的bbox的iou>0.5的。
+
+这个采用一个启发式的思路：我们改变nms对不同类别分别做nms的策略，将"1",“2",...,"9"这10个类别当做是”一类“物体，一起进行nms，字符与字符之间相互抑制。采用这个启发式的nms，实验结果在定长的情况下，accuracy上升了1.25%to7%。 
+
+好累哦 先完成公司的代码 明天再写剩余部分8️⃣！
 
 <img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/NMS.png" width="400" alt="structure">
 
