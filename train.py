@@ -1,6 +1,3 @@
-"""
-this code will train on kitti data set
-"""
 from __future__ import division
 import random
 import pprint
