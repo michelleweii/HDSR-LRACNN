@@ -20,7 +20,7 @@ from keras_frcnn.simple_parser import get_data
 # 如果用vgg
 # from keras_frcnn import vgg as nn
 
-def train_kitti():
+def train_net():
     # config for data argument
     cfg = config.Config()
 
@@ -294,4 +294,4 @@ def train_kitti():
 
 
 if __name__ == '__main__':
-    train_kitti()
+    train_net()
