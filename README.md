@@ -22,12 +22,7 @@ In this work, a model based on convolutional neural networks (CNNs) is proposed 
 <img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/NMS.png" width="450" alt="structure">
 
 # Datasets
-
-## HDS5
-<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/HDS5.png" width="400" alt="HDS5">
-
-## ICFHR 2014
-<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/HDSRC2014.png" width="400" alt="ICFHR 2014">
+<img src="https://github.com/michelleweii/HDSR-LRACNN/blob/master/pic/Datastesssss.PNG" width="800" alt="datasets">
 
 # Experiment Results
 在HDS5上的检测结果
